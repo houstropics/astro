@@ -2,6 +2,7 @@
 // Component Imports
 import Button from '../components/Button.astro';
 import sportplatzPic from '../images/sportplatz.png';
+import tennisPic from '../images/tennis.png';
 
 // Full Astro Component Syntax:-
 // https://docs.astro.build/basics/astro-components/
@@ -27,31 +28,92 @@ import sportplatzPic from '../images/sportplatz.png';
     <!-- Header -->
     <header class="bg-primary text-white font-univermag py-0">
         <div class="container mx-auto flex justify-between items-center">
-          <!-- Logo or Site Title -->
-          <div class="text-lg font-medium">ASV MALS</div>
-          
-          <!-- Navigation Links -->
-          <nav>
-            <ul class="flex space-x-4">
-              <li><a href="#" class="hover:text-gray-300">Setkionen</a></li>
-              <li><a href="#" class="hover:text-gray-300">Geschichte</a></li>
-              <li><a href="#" class="hover:text-gray-300">Kontakt</a></li>
-            </ul>
-          </nav>
+            <!-- Logo or Site Title -->
+            <div class="text-lg font-medium">ASV MALS</div>
+            
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-4">
+                    <li class="relative">
+                        <a href="#" class="hover:text-gray-300">Setkionen</a>
+                        <!-- Dropdown Menu -->
+                        <ul class="absolute z-10 hidden bg-white border border-gray-200 py-2 mt-1 rounded-md">
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Fussball</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Badminton</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tennis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover:text-gray-300">Geschichte</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
+    
 
     <!-- Main Content Area -->
 
     <div class="flex font-univermag">
-        <div class="w-1/2 h-100 bg-primary flex items-center justify-center text-white relative">
+        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
             <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
-            Der Verein
+            <!-- Text "Der Verein" -->
+            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Der Verein</div>
+            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4 grid grid-cols-2 gap-x-8" style="bottom: 5%;">
+                <div id="count">850+</div>
+                <div class="font-oskari-g2 uppercase text-sm flex items-center">
+                    <span class="mr-1">Mitglieder</span>
+                </div>
+                <div>10</div>
+                <div class="font-oskari-g2 uppercase text-sm flex items-center">
+                    <span class="mr-1">Sektionen</span>
+                </div>
+                <div>1965</div>
+                <div class="font-oskari-g2 uppercase text-sm flex items-center">
+                    <span class="mr-1">gegründet</span>
+                </div>
+            </div>
         </div>
         <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
             <img src={sportplatzPic.src} alt="Sportplatz">
         </div>
     </div>
+
+    <div class="flex font-univermag">
+        <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
+            <img src={tennisPic.src} alt="Tennisplatz">
+        </div>
+        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
+            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
+            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Infos</div>
+            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4" style="bottom: 5%;">
+                <div class="font-oskari-g2 uppercase text-sm mb-4">
+                    <span class="mr-1">Geschichte</span>
+                </div>
+                <div class="font-oskari-g2 uppercase text-sm mb-4">
+                    <span class="mr-1">Vorstand</span>
+                </div>
+                <div class="font-oskari-g2 uppercase text-sm">
+                    <span class="mr-1">Downloads</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -64,5 +126,27 @@ import sportplatzPic from '../images/sportplatz.png';
         <Button>Tailwind Button in Astro!</Button>
         <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
     </div>
+
+    <!-- JavaScript for dropdown menu -->
+    <script>
+        // Get the dropdown trigger element
+        const dropdownTrigger = document.querySelector('.relative');
+
+        // Get the dropdown menu
+        const dropdownMenu = dropdownTrigger.querySelector('ul');
+
+        // Add event listener to the dropdown trigger for mouseenter event
+        dropdownTrigger.addEventListener('mouseenter', () => {
+            // Show the dropdown menu
+            dropdownMenu.classList.remove('hidden');
+        });
+
+        // Add event listener to the dropdown trigger for mouseleave event
+        dropdownTrigger.addEventListener('mouseleave', () => {
+            // Hide the dropdown menu
+            dropdownMenu.classList.add('hidden');
+        });
+    </script>
+
 </body>
 </html>
