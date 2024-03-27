@@ -1,6 +1,6 @@
 ---
-import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import sportplatzPic from '../images/sportplatz.png';
 import tennisPic from '../images/tennis.png';
 import kartePic from '../images/karte.png';
@@ -162,44 +162,98 @@ import yoseikanPic from '../images/yoseikan.svg';
             </a>
         </div>
     </div>
-    
 
-    
-        <div class="container mx-auto py-8">
-            <div class="absolute left-0 right-0 h-px bg-primary" ></div>
 
-            <div class="relative font-univermag">
-                <div class="absolute left-0 right-0 text-center text-lg font-semibold text-primary" style="top: calc(50% + 1rem);">
-                    Kontakt
+<!-- Kontakt Section -->
+<div class="w-full h-px bg-primary mt-8"></div>
 
-                </div>
-            </div>
-        </div>
+<div class="container mx-auto flex flex-col items-center">
+  <div class="absolute left-7 text-4xl font-univermag text-primary">Kontakt</div>
+</div>
 
-    
-    
-        
-    
-    
-    
-    
-    
-    
-        
+<!-- Telefon and Email Section -->
+<div class="w-full h-px bg-primary mt-16"></div> 
+<div class="mt-2"></div>
+
+<div class="container mx-auto">
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Telefon: <span class="inline-block pl-9">+39 335 5921234</span>
     </div>
-      
-      <div class="grid place-items-center h-screen content-center">
-        <!-- existing content --> 
-      </div>
-      
-    <div class="grid place-items-center h-screen content-center">
-        <Button>Tailwind Button in Astro!</Button>
-        <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-    </div>
+  </div>
 
-   
+  <div class="mt-2"></div>
+
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">  
+      Email: <span class="inline-block pl-12">sportverein@mals.it</span>
+    </div>
+  </div>
+</div>
+
+<div class="mt-2"></div>
+<div class="w-full h-px bg-primary mt-4"></div>
+
+<!-- Additional Contact Information Section -->
+<div class="mt-2"></div>
+
+<div class="container mx-auto">
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Pec: <span class="inline-block pl-9">sportverein@pec.mals.it</span>
+    </div>
+  </div>
+
+  <div class="mt-2"></div>
+
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Adresse: <span class="inline-block pl-12">martgasse 13, 39024 Mals im Vinschgau</span> 
+    </div>
+  </div>
+  
+  <div class="mt-2"></div>
+  
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Steuernummer: <span class="inline-block pl-12">82028500211</span>
+    </div>
+  </div>
+
+  <div class="mt-2"></div>
+
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Mwst.Nr.: <span class="inline-block pl-12">01448330215</span>
+    </div>
+  </div>
+</div>
+
+<div class="mt-2"></div> 
+
+<div class="w-full h-px bg-primary mt-2"></div>
+
+
+<div class="mt-2"></div>
+
+<div class="container mx-auto">
+  <div class="relative">
+    <div class="font-oskari-g2 text-primary">
+      Social: <span class="inline-block pl-9">Instagram</span>
+      <span class="inline-block pl-9">Facebook</span>
+    </div>
+  </div>
+</div>
+
+<div class="mt-2"></div>
+<div class="w-full h-px bg-primary mt-4"></div>
+
+
+    
+
+    
+    <Footer></Footer>
 
 </body>
 </html>
 
-export default Component()
