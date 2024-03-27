@@ -1,11 +1,20 @@
 ---
-// Component Imports
 import Button from '../components/Button.astro';
+import Header from '../components/Header.astro';
 import sportplatzPic from '../images/sportplatz.png';
 import tennisPic from '../images/tennis.png';
+import kartePic from '../images/karte.png';
+import badmintonPic from '../images/badminton.svg';
+import tennisPic2 from '../images/tennis.svg';
+import volleyPic from '../images/volleyball.svg';
+import triathlonPic from '../images/triathlon.svg';
+import schwimmenPic from '../images/schwimmen.svg';
+import leichtathletikPic from '../images/leichtathletik.svg';
+import bogenschützenPic from '../images/bogenschützen.svg';
+import sportschützenPic from '../images/sportschützen.svg';
+import fussballPic from '../images/fussball.svg';
+import yoseikanPic from '../images/yoseikan.svg';
 
-// Full Astro Component Syntax:-
-// https://docs.astro.build/basics/astro-components/
 ---
 
 <html lang="en">
@@ -14,7 +23,7 @@ import tennisPic from '../images/tennis.png';
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro + TailwindCSS</title>
+    <title>ASV Mals</title>
     <!-- Include global CSS first -->
     <style is:global>
         @import '../styles/global.css'; 
@@ -25,31 +34,8 @@ import tennisPic from '../images/tennis.png';
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="bg-primary text-white font-univermag py-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo or Site Title -->
-            <div class="text-lg font-medium">ASV MALS</div>
-            
-            <!-- Navigation Links -->
-            <nav>
-                <ul class="flex space-x-4">
-                    <li class="relative">
-                        <a href="#" class="hover:text-gray-300">Setkionen</a>
-                        <!-- Dropdown Menu -->
-                        <ul class="absolute z-10 hidden bg-white border border-gray-200 py-2 mt-1 rounded-md">
-                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Fussball</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Badminton</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tennis</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="hover:text-gray-300">Geschichte</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
+   
+    <Header></Header>
 
     <!-- Main Content Area -->
 
@@ -99,24 +85,108 @@ import tennisPic from '../images/tennis.png';
         </div>
     </div>
     
+    <div class="flex font-univermag">
+        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
+            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
+            <!-- Text "Sektionen" -->
+            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Sektionen</div>
+            <!-- List of links with images -->
+            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl" style="top: 18%;">
+                <ul class="font-oskari-g2 uppercase text-sm mb-4">
+                    <li class="mb-4">
+                        <a href="/fussball">
+                            <img src={fussballPic.src} alt="Sportplatz" class="inline-block mr-2" style="margin-right: 8px;">
+                            Fussball
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={badmintonPic.src} alt="Badminton-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Badminton
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={tennisPic2.src} alt="Tennis-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Tennis
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={sportschützenPic.src} alt="Sportschützen-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Sportschützen
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={triathlonPic.src} alt="Triathlon-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Triathlon
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={yoseikanPic.src} alt="Yoseikan-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Yoseikan Budo
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={bogenschützenPic.src} alt="Bogenschützen" class="inline-block mr-2" style="margin-right: 8px;">
+                            Bogenschützen
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={volleyPic.src} alt="Volleyball-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Volleyball
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#">
+                            <img src={leichtathletikPic.src} alt="Leichtathletik-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Leichtathletik
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src={schwimmenPic.src} alt="Schwimmen-Icon" class="inline-block mr-2" style="margin-right: 8px;">
+                            Schwimmen
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
+            <a href="#">
+                <img src={kartePic.src} alt="Sportplatz" style="max-width: 100%; height: auto;">
+            </a>
+        </div>
+    </div>
+    
+
+    
+        <div class="container mx-auto py-8">
+            <div class="absolute left-0 right-0 h-px bg-primary" ></div>
+
+            <div class="relative font-univermag">
+                <div class="absolute left-0 right-0 text-center text-lg font-semibold text-primary" style="top: calc(50% + 1rem);">
+                    Kontakt
+
+                </div>
+            </div>
+        </div>
+
+    
+    
+        
+    
+    
+    
+    
     
     
         
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
       
       <div class="grid place-items-center h-screen content-center">
         <!-- existing content --> 
@@ -127,26 +197,9 @@ import tennisPic from '../images/tennis.png';
         <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
     </div>
 
-    <!-- JavaScript for dropdown menu -->
-    <script>
-        // Get the dropdown trigger element
-        const dropdownTrigger = document.querySelector('.relative');
-
-        // Get the dropdown menu
-        const dropdownMenu = dropdownTrigger.querySelector('ul');
-
-        // Add event listener to the dropdown trigger for mouseenter event
-        dropdownTrigger.addEventListener('mouseenter', () => {
-            // Show the dropdown menu
-            dropdownMenu.classList.remove('hidden');
-        });
-
-        // Add event listener to the dropdown trigger for mouseleave event
-        dropdownTrigger.addEventListener('mouseleave', () => {
-            // Hide the dropdown menu
-            dropdownMenu.classList.add('hidden');
-        });
-    </script>
+   
 
 </body>
 </html>
+
+export default Component()
