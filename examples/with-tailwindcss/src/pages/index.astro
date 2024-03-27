@@ -1,24 +1,68 @@
 ---
 // Component Imports
 import Button from '../components/Button.astro';
+import sportplatzPic from '../images/sportplatz.png';
 
 // Full Astro Component Syntax:-
 // https://docs.astro.build/basics/astro-components/
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro + TailwindCSS</title>
+    <!-- Include global CSS first -->
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
+    <!-- Then include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white font-univermag py-0">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo or Site Title -->
+          <div class="text-lg font-medium">ASV MALS</div>
+          
+          <!-- Navigation Links -->
+          <nav>
+            <ul class="flex space-x-4">
+              <li><a href="#" class="hover:text-gray-300">Setkionen</a></li>
+              <li><a href="#" class="hover:text-gray-300">Geschichte</a></li>
+              <li><a href="#" class="hover:text-gray-300">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Main Content Area -->
+
+    <div class="flex font-univermag">
+        <div class="w-1/2 h-100 bg-primary flex items-center justify-center text-white relative">
+            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
+            Der Verein
+        </div>
+        <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
+            <img src={sportplatzPic.src} alt="Sportplatz">
+        </div>
+    </div>
+    
+    
+    
+      
+      <div class="grid place-items-center h-screen content-center">
+        <!-- existing content --> 
+      </div>
+      
+    <div class="grid place-items-center h-screen content-center">
+        <Button>Tailwind Button in Astro!</Button>
+        <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+    </div>
+</body>
 </html>
