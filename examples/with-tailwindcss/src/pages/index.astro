@@ -37,13 +37,19 @@ import yoseikanPic from '../images/yoseikan.svg';
    
     <Header></Header>
 
-    <!-- Main Content Area -->
+    <!-- Main Content Area 
+     <div class="relative ml-7">
+            <div class="text-4xl font-univermag text-primary">Kontakt</div>
+        </div>
+    -->
 
     <div class="flex font-univermag">
-        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
-            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
-            <!-- Text "Der Verein" -->
-            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Der Verein</div>
+        <div class="w-1/2 h-100 bg-primary flex flex-col text-white relative">
+            <div class="w-full h-px bg-secondary mt-8"></div>
+            <div class="relative ml-7 text-white">
+                <div class="text-6xl font-univermag">Der Verein</div>
+            </div>
+
             <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4 grid grid-cols-2 gap-x-8" style="bottom: 5%;">
                 <div id="count">850+</div>
                 <div class="font-oskari-g2 uppercase text-sm flex items-center">
@@ -163,90 +169,68 @@ import yoseikanPic from '../images/yoseikan.svg';
         </div>
     </div>
 
+    <section class="Kontakt">
+        <!-- Kontakt Section -->
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+    
+        <div class="relative ml-7">
+            <div class="text-4xl font-univermag text-primary">Kontakt</div>
+        </div>
+        <div class="w-full h-0.5 bg-primary mt-16"></div>
+    
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-20 uppercase">Telefon:</td>
+                    <td>+39 335 5921234</td>
+                </tr>
+                <tr>
+                    <td class="pr-20 uppercase">Email:</td>
+                    <td>sportverein@mals.it</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+    
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-8 uppercase">Pec:</td>
+                    <td>sportverein@pec.mals.it</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase">Adresse:</td>
+                    <td>Marktgasse 13, 39024 Mals im Vinschgau</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase">Steuernummer:</td>
+                    <td>82028500211</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase">Mwst.Nr.:</td>
+                    <td>01448330215</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+    
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-24 uppercase">Social:</td>
+                    <td>Facebook</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+        <div class="h-8"></div>
+    </section>
+    
+    
 
-<!-- Kontakt Section -->
-<div class="w-full h-px bg-primary mt-8"></div>
-
-<div class="container mx-auto flex flex-col items-center">
-  <div class="absolute left-7 text-4xl font-univermag text-primary">Kontakt</div>
-</div>
-
-<!-- Telefon and Email Section -->
-<div class="w-full h-px bg-primary mt-16"></div> 
-<div class="mt-2"></div>
-
-<div class="container mx-auto">
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Telefon: <span class="inline-block pl-9">+39 335 5921234</span>
-    </div>
-  </div>
-
-  <div class="mt-2"></div>
-
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">  
-      Email: <span class="inline-block pl-12">sportverein@mals.it</span>
-    </div>
-  </div>
-</div>
-
-<div class="mt-2"></div>
-<div class="w-full h-px bg-primary mt-4"></div>
-
-<!-- Additional Contact Information Section -->
-<div class="mt-2"></div>
-
-<div class="container mx-auto">
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Pec: <span class="inline-block pl-9">sportverein@pec.mals.it</span>
-    </div>
-  </div>
-
-  <div class="mt-2"></div>
-
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Adresse: <span class="inline-block pl-12">martgasse 13, 39024 Mals im Vinschgau</span> 
-    </div>
-  </div>
-  
-  <div class="mt-2"></div>
-  
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Steuernummer: <span class="inline-block pl-12">82028500211</span>
-    </div>
-  </div>
-
-  <div class="mt-2"></div>
-
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Mwst.Nr.: <span class="inline-block pl-12">01448330215</span>
-    </div>
-  </div>
-</div>
-
-<div class="mt-2"></div> 
-
-<div class="w-full h-px bg-primary mt-2"></div>
-
-
-<div class="mt-2"></div>
-
-<div class="container mx-auto">
-  <div class="relative">
-    <div class="font-oskari-g2 text-primary">
-      Social: <span class="inline-block pl-9">Instagram</span>
-      <span class="inline-block pl-9">Facebook</span>
-    </div>
-  </div>
-</div>
-
-<div class="mt-2"></div>
-<div class="w-full h-px bg-primary mt-4"></div>
 
 
     
