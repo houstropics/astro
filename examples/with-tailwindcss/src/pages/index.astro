@@ -75,125 +75,135 @@ import yoseikanPic from '../images/yoseikan.svg';
         </div>
     </div>
     
-    
-
     <div class="flex font-univermag">
+      
         <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
             <img src={tennisPic.src} alt="Tennisplatz">
         </div>
-        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
-            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
-            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Infos</div>
-            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4" style="bottom: 5%;">
-                <div class="font-oskari-g2 uppercase text-sm mb-4">
-                    <span class="mr-1">Geschichte</span>
-                </div>
-                <div class="font-oskari-g2 uppercase text-sm mb-4">
-                    <span class="mr-1">Vorstand</span>
-                </div>
-                <div class="font-oskari-g2 uppercase text-sm">
-                    <span class="mr-1">Downloads</span>
-                </div>
+        <div class="w-1/2 h-100 bg-primary flex flex-col text-white relative">
+            <div class="w-full h-px bg-secondary mt-8"></div>
+            <div class="relative ml-7 text-white">
+                <div class="text-6xl font-univermag">Infos</div>
             </div>
-        </div>
-    </div>
     
-    <div class="flex font-univermag">
-        <div class="w-1/2 h-100 bg-primary flex flex-col items-center justify-center text-white relative">
-            <div class="absolute left-0 right-0 h-px bg-secondary" style="top: 10%;"></div>
-            <!-- Text "Sektionen" -->
-            <div class="absolute left-7 text-4xl text-white" style="top: 12%;">Sektionen</div>
-            <!-- List of links with images -->
-            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl" style="top: 18%;">
-                <ul class="font-oskari-g2 uppercase text-sm mb-4">
-                    <li class="mb-4">
-                        <a href="/fussball">
-                            <img src={fussballPic.src} alt="Sportplatz" class="inline-block mr-2" style="margin-right: 8px;">
-                            Fussball
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={badmintonPic.src} alt="Badminton-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Badminton
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={tennisPic2.src} alt="Tennis-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Tennis
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={sportschützenPic.src} alt="Sportschützen-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Sportschützen
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={triathlonPic.src} alt="Triathlon-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Triathlon
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={yoseikanPic.src} alt="Yoseikan-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Yoseikan Budo
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={bogenschützenPic.src} alt="Bogenschützen" class="inline-block mr-2" style="margin-right: 8px;">
-                            Bogenschützen
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={volleyPic.src} alt="Volleyball-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Volleyball
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">
-                            <img src={leichtathletikPic.src} alt="Leichtathletik-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Leichtathletik
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src={schwimmenPic.src} alt="Schwimmen-Icon" class="inline-block mr-2" style="margin-right: 8px;">
-                            Schwimmen
-                        </a>
-                    </li>
-                </ul>
+            <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
+                <table class="text-5xl">
+                    <tr>
+                        <td class="font-oskari-g2 text-2xl uppercase">Geschichte</td>
+                    </tr>
+                    <tr>
+                        <td class="font-oskari-g2 text-2xl uppercase">Vorstand</td>
+                    </tr>
+                    <tr>
+                        <td class="font-oskari-g2 text-2xl uppercase">Downloads</td>
+                    </tr>
+                </table>
+                         
+                
             </div>
         </div>
-        <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
-            <a href="#">
-                <img src={kartePic.src} alt="Sportplatz" style="max-width: 100%; height: auto;">
-            </a>
+    </div>    
+
+
+
+<div class="flex font-univermag">
+    <div class="w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+            <div class="text-6xl font-univermag">Sektionen</div>
+        </div>
+
+        <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
+            <ul class="font-oskari-g2 text-2xl uppercase mt-8">
+                <li class="mb-4">
+                    <a href="/fussball" class="flex items-center">
+                        <img src={fussballPic.src} alt="Fussball" class="inline-block mr-14" >
+                        Fussball
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={badmintonPic.src} alt="Badminton" class="inline-block mr-14">
+                        Badminton
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={tennisPic2.src} alt="Tennis" class="inline-block mr-14">
+                        Tennis
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={sportschützenPic.src} alt="Sportschützen" class="inline-block mr-14">
+                        Sportschützen
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={triathlonPic.src} alt="Triathlon" class="inline-block mr-14">
+                        Triathlon
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={yoseikanPic.src} alt="Yoseikan Budo" class="inline-block mr-14">
+                        Yoseikan Budo
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={bogenschützenPic.src} alt="Bogenschützen" class="inline-block mr-14">
+                        Bogenschützen
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={volleyPic.src} alt="Volleyball" class="inline-block mr-14">
+                        Volleyball
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src={leichtathletikPic.src} alt="Leichtathletik" class="inline-block mr-14">
+                        Leichtathletik
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center">
+                        <img src={schwimmenPic.src} alt="Schwimmen" class="inline-block mr-14">
+                        Schwimmen
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
+        <img src={kartePic.src} alt="Sportplatz" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+
+    
+
+
 
     <section class="Kontakt">
         <!-- Kontakt Section -->
-        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="w-full h-0.5 bg-primary mt-14"></div>
     
         <div class="relative ml-7">
-            <div class="text-4xl font-univermag text-primary">Kontakt</div>
+            <div class="text-6xl font-univermag text-primary">Kontakt</div>
         </div>
-        <div class="w-full h-0.5 bg-primary mt-16"></div>
     
-        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="w-full h-0.5 bg-primary mt-20"></div>
         <div class="relative ml-7">
             <table class="border-collapse border-transparent font-oskari-g2 text-primary">
                 <tr>
-                    <td class="pr-20 uppercase">Telefon:</td>
+                    <td class="pr-20 uppercase font-bold">Telefon</td>
                     <td>+39 335 5921234</td>
                 </tr>
                 <tr>
-                    <td class="pr-20 uppercase">Email:</td>
+                    <td class="pr-20 uppercase font-bold">Email</td>
                     <td>sportverein@mals.it</td>
                 </tr>
             </table>
@@ -204,19 +214,19 @@ import yoseikanPic from '../images/yoseikan.svg';
         <div class="relative ml-7">
             <table class="border-collapse border-transparent font-oskari-g2 text-primary">
                 <tr>
-                    <td class="pr-8 uppercase">Pec:</td>
+                    <td class="pr-8 uppercase font-bold">Pec</td>
                     <td>sportverein@pec.mals.it</td>
                 </tr>
                 <tr>
-                    <td class="pr-8 uppercase">Adresse:</td>
+                    <td class="pr-8 uppercase font-bold">Adresse</td>
                     <td>Marktgasse 13, 39024 Mals im Vinschgau</td>
                 </tr>
                 <tr>
-                    <td class="pr-8 uppercase">Steuernummer:</td>
+                    <td class="pr-8 uppercase font-bold">Steuernummer</td>
                     <td>82028500211</td>
                 </tr>
                 <tr>
-                    <td class="pr-8 uppercase">Mwst.Nr.:</td>
+                    <td class="pr-8 uppercase font-bold">Mwst.Nr.</td>
                     <td>01448330215</td>
                 </tr>
             </table>
@@ -227,7 +237,7 @@ import yoseikanPic from '../images/yoseikan.svg';
         <div class="relative ml-7">
             <table class="border-collapse border-transparent font-oskari-g2 text-primary">
                 <tr>
-                    <td class="pr-24 uppercase">Social:</td>
+                    <td class="pr-24 uppercase font-bold">Social</td>
                     <td>Facebook</td>
                 </tr>
             </table>
