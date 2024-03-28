@@ -41,6 +41,8 @@ import yoseikanPic from '../images/yoseikan.svg';
      <div class="relative ml-7">
             <div class="text-4xl font-univermag text-primary">Kontakt</div>
         </div>
+                    <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4 grid grid-cols-2 gap-x-8" style="bottom: 5%;">
+
     -->
 
     <div class="flex font-univermag">
@@ -49,26 +51,31 @@ import yoseikanPic from '../images/yoseikan.svg';
             <div class="relative ml-7 text-white">
                 <div class="text-6xl font-univermag">Der Verein</div>
             </div>
-
-            <div class="absolute left-7 text-lg md:text-xl lg:text-3xl mt-4 grid grid-cols-2 gap-x-8" style="bottom: 5%;">
-                <div id="count">850+</div>
-                <div class="font-oskari-g2 uppercase text-sm flex items-center">
-                    <span class="mr-1">Mitglieder</span>
-                </div>
-                <div>10</div>
-                <div class="font-oskari-g2 uppercase text-sm flex items-center">
-                    <span class="mr-1">Sektionen</span>
-                </div>
-                <div>1965</div>
-                <div class="font-oskari-g2 uppercase text-sm flex items-center">
-                    <span class="mr-1">gegründet</span>
-                </div>
+    
+            <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
+                <table class="text-5xl">
+                    <tr>
+                        <td id="count">850+</td>
+                        <td class="font-oskari-g2 text-2xl uppercase ">Mitglieder</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="font-oskari-g2 text-2xl uppercase">Sektionen</td>
+                    </tr>
+                    <tr>
+                        <td>1965</td>
+                        <td class="font-oskari-g2 text-2xl uppercase">gegründet</td>
+                    </tr>
+                </table>             
+                
             </div>
         </div>
         <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
             <img src={sportplatzPic.src} alt="Sportplatz">
         </div>
     </div>
+    
+    
 
     <div class="flex font-univermag">
         <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
