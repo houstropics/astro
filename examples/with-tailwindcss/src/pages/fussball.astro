@@ -1,9 +1,18 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Banner from '../images/bannerFussball.jpg';
-import fussballPic from '../images/fussball.svg';
-
+import Banner from '../images/fussball/bannerFussball.jpg';
+import fussballPic from '../images/fussball/fussball.svg';
+import pregamePic from '../images/fussball/pregame.png';
+import spacePic from '../images/fussball/space.png';
+import wieserPic from '../images/fussball/wieser.png';
+import MannschaftPic from '../images/fussball/Mannschaft.jpg';
+import tizianPic from '../images/fussball/tizian.png';
+import torjubelPic from '../images/fussball/torjubel.png';
+import mentaPic from '../images/fussball/menta.png';
+import schoepfPic from '../images/fussball/schoepf.png';
+import ceolPic from '../images/fussball/ceol.png';
+import trainingPic from '../images/fussball/training.png';
 
 ---
 
@@ -68,20 +77,37 @@ import fussballPic from '../images/fussball.svg';
           </div>
 
           <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
-              <table class="text-5xl">
-                  <tr>
-                      <td id="count">850+</td>
-                      <td class="font-oskari-g2 text-2xl uppercase ">Mitglieder</td>
-                  </tr>
-                  <tr>
-                      <td>10</td>
-                      <td class="font-oskari-g2 text-2xl uppercase">Sektionen</td>
-                  </tr>
-                  <tr>
-                      <td>1965</td>
-                      <td class="font-oskari-g2 text-2xl uppercase">gegründet</td>
-                  </tr>
-              </table>                       
+				<table class="text-xl font-oskari-g2">
+					<tr>
+						<td class="pr-10 uppercase">Sektionsleiter</td>
+						<td>Roland Mur</td>
+					</tr>
+					<tr>
+						<td class="uppercase">Telefon</td>
+						<td>+39 3772410000</td>
+					</tr>
+					<tr>
+						<td class="uppercase">Email</td>
+						<td>rolandmur@gmail.com</td>
+					</tr>
+				</table>
+
+				<table class="text-xl font-oskari-g2 uppercase mr-7 text-right">
+					<tr>
+						<td class="pl-32">Web</td>
+					</tr>
+					<tr>
+						<td class="pl-32">Instagram</td>
+					</tr>
+					<tr>
+						<td class="pl-32">Facebook</td>
+					</tr>
+				</table>
+
+
+
+          
+                                
           </div>
       </div>
       <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
@@ -89,33 +115,89 @@ import fussballPic from '../images/fussball.svg';
       </div>
   </div>
 
-  <div class="flex font-univermag">
-    
-      <div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
-          <img src={Banner.src} alt="Tennisplatz">
-      </div>
-      <div class="w-1/2 h-100 bg-primary flex flex-col text-white relative">
-          <div class="w-full h-px bg-secondary mt-8"></div>
-          
+	<div class="flex font-univermag">
+		<div class="w-1/2 h-100 bg-blue-500 flex items-center justify-center">
+			<img src={Banner.src} alt="Tennisplatz" />
+		</div>
+		<div class="w-1/2 h-100 bg-primary flex flex-col text-white relative">
+			<div class="w-full h-px bg-secondary mt-8"></div>
 
-          <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
-              <table class="text-5xl">
-                  <tr>
-                      <td class="font-oskari-g2 text-2xl uppercase">Geschichte</td>
-                  </tr>
-                  <tr>
-                      <td class="font-oskari-g2 text-2xl uppercase">Vorstand</td>
-                  </tr>
-                  <tr>
-                      <td class="font-oskari-g2 text-2xl uppercase">Downloads</td>
-                  </tr>
-              </table>
-                       
-          </div>
-      </div>
-  </div>   
+			<div class="absolute right-0" style="bottom: 20px;">
+				<table class="font-oskari-g2 text-2xl uppercase text-right mr-7">
+					<tr>
+						<td>Geschichte</td>
+					</tr>
+					<tr>
+						<td>Kader</td>
+					</tr>
+					<tr>
+						<td>Erfolge</td>
+					</tr>
+					<tr>
+						<td>Fotogalerie</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>   
 
-    
+  <section class="Kontakt">
+    <div class="w-full h-0.5 bg-primary mt-14"></div>
+
+    <div class="relative ml-7">
+        <div class="text-6xl font-univermag text-primary mb-20">Fotogalerie</div>
+    </div>
+
+</section>
+
+
+	<div class="flex justify-center pb-1">
+		<div class="w-3/10 px-2">
+			<img src={pregamePic.src} alt="Mannschaft" />
+		</div>
+
+		<div class="w-4/10">
+			<img src={spacePic.src} alt="Actionbild" />
+		</div>
+
+		<div class="w-3/10 px-2">
+			<img src={wieserPic.src} alt="Actionbild" />
+		</div>
+	</div>
+
+	<div class="flex justify-center pb-1">
+		<div class="w-3/10 px-2">
+			<img src={pregamePic.src} alt="Mannschaft" />
+		</div>
+
+		<div class="w-4/10">
+			<img src={spacePic.src} alt="Actionbild" />
+		</div>
+
+		<div class="w-3/10 px-2">
+			<img src={wieserPic.src} alt="Actionbild" />
+		</div>
+	</div>
+
+	<div class="flex justify-center">
+		<div class="w-3/10 px-2">
+			<img src={pregamePic.src} alt="Mannschaft" />
+		</div>
+
+		<div class="w-4/10">
+			<img src={spacePic.src} alt="Actionbild" />
+		</div>
+
+		<div class="w-3/10 px-2">
+			<img src={wieserPic.src} alt="Actionbild" />
+		</div>
+	</div>
+
+
+	<img src={MannschaftPic.src} alt="Actionbild" class="px-2 py-2" />
+
+  
+
   <Footer></Footer>
 
 </body>
