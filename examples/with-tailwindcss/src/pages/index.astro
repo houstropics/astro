@@ -26,6 +26,9 @@ import jubelPic from '../images/index/jubel.jpg';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>ASV Mals</title>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+
+    
     <!-- Include global CSS first -->
     <style is:global>
         @import '../styles/global.css'; 
@@ -60,18 +63,27 @@ import jubelPic from '../images/index/jubel.jpg';
             <div class="relative ml-7 grid grid-cols-2 gap-x-8" style="bottom: 20px; position: absolute; left: 0; right: 0;">
                 <table class="text-5xl">
                     <tr>
-                        <td id="count">850+</td>
-                        <td class="font-oskari-g2 text-2xl uppercase ">Mitglieder</td>
+                        <td id="count1">850+</td>
+                        <td class="font-oskari-g2 text-2xl uppercase">Mitglieder</td>
                     </tr>
                     <tr>
-                        <td>10</td>
+                        <td id="count1" >10</td>
                         <td class="font-oskari-g2 text-2xl uppercase">Sektionen</td>
                     </tr>
                     <tr>
-                        <td>1965</td>
+                        <td id="count3">1965</td>
                         <td class="font-oskari-g2 text-2xl uppercase">gegründet</td>
                     </tr>
-                </table>             
+                </table>
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             </div>
         </div>
@@ -100,7 +112,7 @@ import jubelPic from '../images/index/jubel.jpg';
                         <td class="font-oskari-g2 text-2xl uppercase"><a href="/vorstand" >Vorstand</a></td>
                     </tr>
                     <tr>
-                        <td class="font-oskari-g2 text-2xl uppercase">Downloads</td>
+                        <td class="font-oskari-g2 text-2xl uppercase"><a href="/downloads" >Downloads</a></td>
                     </tr>
                 </table>
                          
@@ -188,9 +200,7 @@ import jubelPic from '../images/index/jubel.jpg';
     </div>
 </div>
 
-    
-
-
+  
 
     <section class="Kontakt">
         <!-- Kontakt Section -->
@@ -251,11 +261,7 @@ import jubelPic from '../images/index/jubel.jpg';
         <div class="h-8"></div>
     </section>
     
-    
-
-
-
-    
+     
 
     
     <Footer></Footer>

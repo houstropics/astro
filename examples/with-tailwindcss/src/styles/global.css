@@ -25,3 +25,9 @@
 .font-oskari-g2 {
     font-family: 'Oskari G2', sans-serif;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
