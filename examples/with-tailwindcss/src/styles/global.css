@@ -18,6 +18,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Oskari G2';
+    src: url('/fonts/.font-oskari-g2-semibold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .font-univermag {
     font-family: 'Univermag', sans-serif;
 }
@@ -25,6 +33,11 @@
 .font-oskari-g2 {
     font-family: 'Oskari G2', sans-serif;
 }
+
+.font-oskari-g2-semibold {
+    font-family: 'Oskari G2', sans-serif;
+}
+
 
 body {
     min-height: 100vh;
