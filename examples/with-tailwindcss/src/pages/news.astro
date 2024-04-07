@@ -11,22 +11,19 @@ import Footer from '../components/Footer.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>ASV Mals</title>
-    <!-- Include global CSS first -->
+
     <style is:global>
         @import '../styles/global.css'; 
-      </style>
+    </style>
 
 <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
 
-    <!-- Then include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
    
     <Header></Header>
-
-   
 
 
 
@@ -42,16 +39,15 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <section>
-        <!-- Place <div> tag where you want the feed to appear -->
-<style>
-    .crt-tag {
-        opacity: 0;
-    }
-</style>
+
 
 <div id="curator-feed-default-feed-layout">
-    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+    <a  href="https://curator.io" target="_blank" class="crt-logo crt-tag" style="opacity: 0; color: transparent;" >Powered by Curator.io</a>
 </div>
+
+
+
+
 <!-- The Javascript can be moved to the end of the html page before the </body> tag --><script type="text/javascript">
 /* curator-feed-default-feed-layout */
 (function(){

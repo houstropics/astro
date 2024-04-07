@@ -48,39 +48,34 @@
 
 
 <script>
-    const dropdownTrigger = document.querySelector('.relative');
-    const dropdownMenu = dropdownTrigger.querySelector('ul');
-    const burgerButton = document.getElementById('burger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobiledropdown = document.getElementById('mobiledropdown');
-	const dropdown = document.getElementById('dropdown');
+const dropdownTrigger = document.querySelector('.relative');
+const dropdownMenu = dropdownTrigger.querySelector('ul');
+const burgerButton = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobiledropdown = document.getElementById('mobiledropdown');
+const dropdown = document.getElementById('dropdown');
 
+// Function to toggle menu visibility
+function toggleMenu() {
+    dropdownMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('hidden');
+}
 
-    // Function to toggle menu visibility
-    function toggleMenu() {
-        dropdownMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('hidden');
-    }
+dropdownTrigger.addEventListener('mouseenter', () => {
+    dropdownMenu.classList.remove('hidden');
+});
 
-    dropdownTrigger.addEventListener('mouseenter', () => {
-        dropdownMenu.classList.remove('hidden');
-    });
+dropdownTrigger.addEventListener('mouseleave', () => {
+    dropdownMenu.classList.add('hidden');
+});
 
-    dropdownTrigger.addEventListener('mouseleave', () => {
-        dropdownMenu.classList.add('hidden');
-    });
+// Add event listener to burger button
+burgerButton.addEventListener('click', () => {
+    toggleMenu();
+});
 
-    // Add event listener to burger button
-    burgerButton.addEventListener('click', () => {
-        toggleMenu();
-    });
-
-    // Add event listener to mobile dropdown
-    mobiledropdown.addEventListener('click', () => {
- 	dropdown.classList.remove('hidden'); 
-
-	mobiledropdown.addEventListener('click', () => {
-		dropdown.classList.add('hidden'); 
-    });
+// Add event listener to mobile dropdown
+mobiledropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
 });
 </script>
