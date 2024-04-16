@@ -4,6 +4,10 @@ import Footer from '../components/Footer.astro';
 import Gallery from '../components/Gallery.astro';
 import Banner from '../images/fussball/bannerFussball.jpg';
 import fussballPic from '../images/fussball/fussball.svg';
+import raffiPic from '../images/fussball/raffi.jpg';
+import raffiLg from '../images/fussball/raffi_lg.jpg';
+import preGameLg from '../images/fussball/pregameLg.jpg';
+import preGamesd from '../images/fussball/pregame_sd.jpg';
 import pregamePic from '../images/fussball/pregame.png';
 import spacePic from '../images/fussball/space.png';
 import wieserPic from '../images/fussball/wieser.png';
@@ -52,19 +56,25 @@ import trainingPic from '../images/fussball/training.png';
 		/>
 
       <div style="position: absolute; bottom: 0; left: 0;">
-          <table style="border-collapse: collapse; background-color: transparent;">
+          <table class="mb-4" >
             <tr>
-              <td style="padding-left: 28px; padding-bottom: 20px;">
+              <td style="padding-left: 28px;">
                 <img
                   src={fussballPic.src}
                   alt="Fussball"
                   style="width:100px;"
-                  class="inline-block mr-14"
+                  class="hidden lg:inline-block mr-14"
+                />
+				<img
+                  src={fussballPic.src}
+                  alt="Fussball"
+                  style="width:70px;"
+                  class="lg:hidden inline-block mr-3"
                 />
               </td>
 
-              <td>
-                <div class="text-6xl font-univermag text-white">Fussball</div>
+			  <td> 
+                <div class="text-5xl lg:text-8xl font-univermag text-white">Fussball</div>
               </td>
             </tr>
           </table>
@@ -82,7 +92,7 @@ import trainingPic from '../images/fussball/training.png';
 			<div class="flex-grow"></div> 
 		
 			<div class="relative ml-7 mb-7 mt-16 lg:mt-0 lg:flex">
-				<div>
+				<div class="hidden lg:block">
 					<table class="text-xl font-oskari-g2">
 						<tr>
 							<td class="pr-10 uppercase">Sektionsleiter</td>
@@ -98,6 +108,30 @@ import trainingPic from '../images/fussball/training.png';
 						</tr>
 					</table>
 				</div>
+
+				<div class="lg:hidden">
+					<table class="text-xl font-oskari-g2 mb-7">
+						<tr>
+							<td class="pr-10 uppercase">Sektionsleiter</td>
+						</tr>
+						<tr>
+							<td>Roland Mur</td>
+						</tr>
+						<tr>
+							<td class="uppercase">Telefon</td>
+						</tr>
+						<tr>
+							<td>+39 3772410000</td>
+						</tr>
+						<tr>
+							<td class="uppercase">Email</td>
+						</tr>
+						<tr>
+							<td>rolandmur@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+				
 				<div class="lg:ml-auto">
 					<table class="text-xl font-oskari-g2 uppercase mr-7 lg:text-right mt-4 lg:mt-0">
 						<tr>
@@ -116,7 +150,8 @@ import trainingPic from '../images/fussball/training.png';
 		</div>
 		
 		<div class="w-full lg:w-1/2 h-100 flex items-center justify-center">
-			<img src={Banner.src} alt="Tennisplatz" />
+			<img class="lg:hidden object-cover" src={raffiPic.src} alt="Raffael" />
+			<img class="lg:block hidden object-cover" src={raffiLg.src} alt="Raffael" />
 		</div>
 	</div>
 	
@@ -153,7 +188,9 @@ import trainingPic from '../images/fussball/training.png';
 		</div>
 		
 		<div class="order-2 lg:order-1 w-full lg:w-1/2 h-100 flex items-center justify-center">
-			<img src={Banner.src} alt="Tennisplatz" />
+			<img class="hidden lg:block" src={preGameLg.src} alt="Pregame" />
+			<img class="lg:hidden" src={preGamesd.src} alt="Pregame" />
+
 		</div>
 	</div>
 
@@ -170,7 +207,7 @@ import trainingPic from '../images/fussball/training.png';
 
 <Gallery></Gallery>
 	
-	<img src={MannschaftPic.src} alt="Actionbild" class="px-2 py-2" />
+	<img class="hidden lg:block" src={MannschaftPic.src} alt="Actionbild" class="px-2 " />
 
   <Footer></Footer>
 

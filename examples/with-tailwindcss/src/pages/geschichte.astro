@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import oldsquad from '../images/geschichte/oldsquad.png';
 import sportschuetzen from '../images/geschichte/sportschuetzen.png';
 import albertFlora from '../images/geschichte/albertFlora.png';
+import Mysnipet from '../components/geschichteSnipet.astro'
 
 
 ---
@@ -35,8 +36,8 @@ import albertFlora from '../images/geschichte/albertFlora.png';
 			<div class="w-full h-0.5 bg-primary mt-14"></div>
 
 			<div class="relative ml-7">
-				<div class="text-6xl font-univermag text-primary">Geschichte</div>
-				<div class="font-oskari-g2-semibold text-xl mt-16 font-bold uppercase text-primary">
+				<div class="text-5xl lg:text-6xl font-univermag text-primary">Geschichte</div>
+				<div class="font-oskari-g2-semibold lg:text-xl mt-16 font-bold uppercase text-primary">
 					Vom Garber Acker zum Zentrum des Sports
 				</div>
 			</div>
@@ -45,23 +46,23 @@ import albertFlora from '../images/geschichte/albertFlora.png';
 
 		</section>
 
-        
-		<div class="flex">
-            <div style="width: 45%;"  class="py-8 pl-20">
+        <section class="laptop">	
+		<div class="flex-row hidden lg:flex">
+            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
 				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
 
 					<img src={oldsquad.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
 				</div>
 			</div>
 
-			<div style="width: 10%;" class="bg-primary">
+			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
                 <div class="font-univermag pt-4  text-7xl text-right">
                     <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
                     <div class="text-white">65</div>
                 </div>
             </div>
             
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary">
+			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
 				<div>This is your text.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
@@ -72,22 +73,22 @@ import albertFlora from '../images/geschichte/albertFlora.png';
 			</div>
 		</div>
 
-		<div class="flex">
-            <div style="width: 45%;"  class="py-8 pl-20">
+		<div class="flex-row hidden lg:flex">
+            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
 				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
 
 					<img src={sportschuetzen.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
 				</div>
 			</div>
 
-			<div style="width: 10%;" class="bg-primary">
+			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
                 <div class="font-univermag pt-4  text-7xl text-right">
                     <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
                     <div class="text-white">72</div>
                 </div>
             </div>
             
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary">
+			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
 				<div>This is your text.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
@@ -98,23 +99,22 @@ import albertFlora from '../images/geschichte/albertFlora.png';
 			</div>
 		</div>
 
-       		<div class="flex">
-				<div style="width: 45%;"  class="py-8 pl-20">
-					<div class="pl-20 pb-4 w-full h-full overflow-hidden">
+		<div class="flex-row hidden lg:flex">
+            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
+				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
 
-						<img src={albertFlora.src} alt="Mannschaftsfoto" class="w-2/4 object-cover float-right" />
-
+					<img src={albertFlora.src} alt="Mannschaftsfoto" class="w-2/4 object-cover float-right" />
 				</div>
 			</div>
 
-			<div style="width: 10%;" class="bg-primary">
+			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
                 <div class="font-univermag pt-4  text-7xl text-right">
-                    <div class="text-secondary" style="margin-bottom: -0.4em;">20</div>
-                    <div class="text-white">24</div>
+                    <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
+                    <div class="text-white">72</div>
                 </div>
             </div>
             
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary">
+			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
 				<div>This is your text.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
@@ -123,7 +123,100 @@ import albertFlora from '../images/geschichte/albertFlora.png';
                     veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate? 
                 </div>
 			</div>
-		</div> 
+		</div>
+		</section>
+
+        <section class="mobile">	
+
+			
+			<Mysnipet
+			number1="99"
+			number2="65"
+			imageSrc={oldsquad.src}
+			imageAlt="Mannschaftsfoto"
+			textContent="This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis? Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate?"
+		  />
+
+
+		<div class="flex flex-row lg:hidden">
+			<div class="w-24 bg-primary relative">
+				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
+					<div class="text-secondary pr-2" style="margin-bottom: -0.4em;">19</div>
+					<div class="text-white z-20">65</div>
+				</div>
+			</div>
+			
+			<div class="w-full flex flex-col relative">
+				<div class="w-full h-auto mt-10 -ml-4 relative">
+					<img src={oldsquad.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
+				</div>
+		
+				<div class="p-4 text-primary">
+					<div>
+						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
+						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
+						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
+						ea voluptate?
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-row lg:hidden">
+			<div class="w-24 bg-primary relative">
+				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
+					<div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
+					<div class="text-white z-20">72</div>
+				</div>
+			</div>
+			
+			<div class="w-full flex flex-col relative">
+				<div class="w-full h-auto mt-10 -ml-6 relative">
+					<img src={sportschuetzen.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
+				</div>
+		
+				<div class="p-4 text-primary">
+					<div>
+						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
+						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
+						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
+						ea voluptate?
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex flex-row lg:hidden">
+			<div class="w-24 bg-primary relative">
+				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
+					<div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
+					<div class="text-white z-20">72</div>
+				</div>
+			</div>
+			
+			<div class="w-full flex flex-col relative">
+				<div class="w-full h-auto mt-10 -ml-6 relative">
+					<img src={albertFlora.src} alt="Mannschaftsfoto" class="w-2/4 object-cover float-right" />
+				</div>
+		
+				<div class="p-4 text-primary">
+					<div>
+						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
+						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
+						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
+						ea voluptate?
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+
+
 
         
         

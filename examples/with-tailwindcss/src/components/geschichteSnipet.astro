@@ -1,0 +1,24 @@
+<!-- MyComponent.astro -->
+
+<div class="flex flex-row lg:hidden">
+    <div class="w-24 bg-primary relative">
+        <div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
+            <div class="text-secondary pr-2" style="margin-bottom: -0.4em;">{Astro.params.number1}</div>
+            <div class="text-white z-20">{Astro.params.number2}</div>
+        </div>
+</div>
+
+    </div>
+
+    <div class="w-full flex flex-col relative">
+        <div class="w-full h-auto mt-10 -ml-4 relative">
+            <img src="{{ astro.params.imageSrc }}" alt="{{ astro.params.imageAlt }}" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="p-4 text-primary">
+            <div>
+                {Astro.params.textContent}
+            </div>
+        </div>
+    </div>
+</div>
