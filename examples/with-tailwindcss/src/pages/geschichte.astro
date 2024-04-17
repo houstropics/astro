@@ -16,13 +16,11 @@ import Mysnipet from '../components/geschichteSnipet.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>ASV Mals</title>
-		<!-- Include global CSS first -->
 		<style is:global>
 			@import '../styles/global.css';
 		</style>
     <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
 
-		<!-- Then include Tailwind CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
 			rel="stylesheet"
@@ -46,182 +44,33 @@ import Mysnipet from '../components/geschichteSnipet.astro'
 
 		</section>
 
-        <section class="laptop">	
-		<div class="flex-row hidden lg:flex">
-            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
-				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
-
-					<img src={oldsquad.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
-				</div>
-			</div>
-
-			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
-                <div class="font-univermag pt-4  text-7xl text-right">
-                    <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
-                    <div class="text-white">65</div>
-                </div>
-            </div>
-            
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
-				<div>This is your text.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
-                    odit voluptate facilis? Accusamus!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, 
-                    veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate? 
-                </div>
-			</div>
-		</div>
-
-		<div class="flex-row hidden lg:flex">
-            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
-				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
-
-					<img src={sportschuetzen.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
-				</div>
-			</div>
-
-			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
-                <div class="font-univermag pt-4  text-7xl text-right">
-                    <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
-                    <div class="text-white">72</div>
-                </div>
-            </div>
-            
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
-				<div>This is your text.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
-                    odit voluptate facilis? Accusamus!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, 
-                    veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate? 
-                </div>
-			</div>
-		</div>
-
-		<div class="flex-row hidden lg:flex">
-            <div style="width: 45%;"  class="py-8 pl-20 order-2 lg:order-none">
-				<div class="pl-20 pb-4 w-full h-full overflow-hidden">
-
-					<img src={albertFlora.src} alt="Mannschaftsfoto" class="w-2/4 object-cover float-right" />
-				</div>
-			</div>
-
-			<div style="width: 10%;" class="bg-primary order-1 lg:order-none">
-                <div class="font-univermag pt-4  text-7xl text-right">
-                    <div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
-                    <div class="text-white">72</div>
-                </div>
-            </div>
-            
-			<div style="width: 45%;" class="py-8 pl-20 pr-8 text-primary order-3 lg:order-none">
-				<div>This is your text.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in 
-                    odit voluptate facilis? Accusamus!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, 
-                    veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate? 
-                </div>
-			</div>
-		</div>
-		</section>
-
-        <section class="mobile">	
 
 			
-			<Mysnipet
-			number1="99"
+		<Mysnipet
+			number1="19"
 			number2="65"
 			imageSrc={oldsquad.src}
 			imageAlt="Mannschaftsfoto"
 			textContent="This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis? Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate?"
-		  />
+		/>
+
+		<Mysnipet
+			number1="19"
+			number2="72"
+			imageSrc={sportschuetzen.src}
+			imageAlt="Mannschaftsfoto"
+			textContent="This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis? Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate?"
+		/>
+
+		<Mysnipet
+			number1="19"
+			number2="65"
+			imageSrc={albertFlora.src} width="w-2/4 object-cover float-right"
+			imageAlt="Mannschaftsfoto"
+			textContent="This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis? Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus ea voluptate?"
+		/>
 
 
-		<div class="flex flex-row lg:hidden">
-			<div class="w-24 bg-primary relative">
-				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
-					<div class="text-secondary pr-2" style="margin-bottom: -0.4em;">19</div>
-					<div class="text-white z-20">65</div>
-				</div>
-			</div>
-			
-			<div class="w-full flex flex-col relative">
-				<div class="w-full h-auto mt-10 -ml-4 relative">
-					<img src={oldsquad.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
-				</div>
-		
-				<div class="p-4 text-primary">
-					<div>
-						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
-						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
-						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
-						ea voluptate?
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="flex flex-row lg:hidden">
-			<div class="w-24 bg-primary relative">
-				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
-					<div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
-					<div class="text-white z-20">72</div>
-				</div>
-			</div>
-			
-			<div class="w-full flex flex-col relative">
-				<div class="w-full h-auto mt-10 -ml-6 relative">
-					<img src={sportschuetzen.src} alt="Mannschaftsfoto" class="w-full h-full object-cover" />
-				</div>
-		
-				<div class="p-4 text-primary">
-					<div>
-						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
-						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
-						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
-						ea voluptate?
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="flex flex-row lg:hidden">
-			<div class="w-24 bg-primary relative">
-				<div class="font-univermag pt-4 text-5xl text-right absolute top-0 left-0 z-50 w-full">
-					<div class="text-secondary" style="margin-bottom: -0.4em;">19</div>
-					<div class="text-white z-20">72</div>
-				</div>
-			</div>
-			
-			<div class="w-full flex flex-col relative">
-				<div class="w-full h-auto mt-10 -ml-6 relative">
-					<img src={albertFlora.src} alt="Mannschaftsfoto" class="w-2/4 object-cover float-right" />
-				</div>
-		
-				<div class="p-4 text-primary">
-					<div>
-						This is your text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
-						nisi veniam voluptatem necessitatibus? Accusantium impedit in odit voluptate facilis?
-						Accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur adipisci
-						aperiam fugiat, veniam magnam a mollitia nemo quos odit corrupti rerum, illum accusamus
-						ea voluptate?
-					</div>
-				</div>
-			</div>
-		</div>
-		</section>
-
-
-
-
-
-        
-        
-        
-        
 
 		<Footer />
 	</body>
